@@ -59,14 +59,21 @@ A user-friendly visual query builder for Zoho CRM's Object Query Language (COQL)
 ## Usage
 
 1. **Select a module** from the dropdown list
+![image](https://github.com/user-attachments/assets/cf1c5364-358c-4f72-b7bd-60fa5f391ec2)
+
 2. **Build your query** using the form-based interface:
    - Add fields to SELECT with optional aggregation functions and aliases
+     - The fields shown in the pick list are in the module which are reached by two join from the base module
+       - It is the restriction of COQL
+       - User module is not supported
    - Create WHERE conditions with comparison operators
    - Define grouping and ordering as needed
    - Set pagination parameters
 3. **Generate COQL** to convert your settings into a query
 4. **Edit COQL manually** if you need to customize it further
-5. **Execute the query** to view the results in the table
+5. **Execute the query**
+![image](https://github.com/user-attachments/assets/2dab4da8-677a-4dc6-920c-f1b34a7eba11)
+
 
 ## Technical Implementation
 
@@ -74,6 +81,7 @@ A user-friendly visual query builder for Zoho CRM's Object Query Language (COQL)
 - Uses Zoho CRM API v7
 - Implements connection APIs for secure API calls
 - Recursively fetches related module fields
+- React, Babel, and Bootstrap rely on CDN
 
 ## Customization
 
