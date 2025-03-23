@@ -24,21 +24,37 @@ A user-friendly visual query builder for Zoho CRM's Object Query Language (COQL)
   - Access standard and custom modules
   - Browse field hierarchy with lookup relationships
   - Navigate up to 2 levels of related module fields
+  - User module is not supported
 
 ## Requirements
 
-- Zoho CRM account
-- A connection to Zoho CRM API (widget connection in this case)
+- Zoho CRM account(Enterprise)
+- widget hosting experience
 
 ## Setup
 
-1. **Configure your Zoho environment**
+1. **Create a connection with the following scope**
+   - ZohoCRM.modules.ALL
+   - ZohoCRM.coql.READ
+   - ZohoCRM.settings.ALL
+2. **Download the codes**
+   - Download the zip file("coqlHelper")
+   - Upzip the file
+3. **Configure "/app.js" file**
    - Set your data center domain in the `dcDomain` variable (e.g., "jp", "com", "eu")
-   - Configure your connection name in the `connection` variable
-   
-2. **Deploy the application**
-   - Upload the files to your web server or Zoho CRM widget
-   - Ensure you have the necessary permissions and API access
+   - Configure your connection name in the `connection` name created in #1
+   - save the file
+4. **Deploy the application**
+   - Zip the folder "coqlHelper" again
+   - Go to Zoho CRM and configure widget as follows
+     -  Type: Web Tab
+     -  Hosting: Zoho
+     -  File: the zipped file
+     -  Index Page: /widget.html (default)
+     -  More detailed information
+       - https://www.zoho.com/crm/developer/docs/widgets/usage.html
+   -  Create web tab
+     -  https://help.zoho.com/portal/en/kb/crm/customize-crm-account/customizing-modules/articles/web-tabs
 
 ## Usage
 
@@ -85,4 +101,5 @@ MIT License
 ## Acknowledgements
 
 - Built using Zoho CRM's API
+-   https://www.zoho.com/crm/developer/docs/api/v7/COQL-Overview.html
 - Inspired by the needs of Zoho CRM administrators and developers
