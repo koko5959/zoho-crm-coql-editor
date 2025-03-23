@@ -109,5 +109,5 @@ MIT License
 ## Acknowledgements
 
 - Built using Zoho CRM's API
--   https://www.zoho.com/crm/developer/docs/api/v7/COQL-Overview.html
+  - https://www.zoho.com/crm/developer/docs/api/v7/COQL-Overview.html
 - Inspired by the needs of Zoho CRM administrators and developers
