@@ -2,7 +2,6 @@
 
 A user-friendly visual query builder for Zoho CRM's Object Query Language (COQL) with real-time data preview.
 
-![COQL Builder Screenshot](screenshot.png)
 
 ## Features
 
